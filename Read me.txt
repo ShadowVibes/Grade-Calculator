@@ -1,0 +1,74 @@
+Hopefully this is sufficient to understand the program. If you still have any questions about this after reading catch me during or after class (or msg me if you have my contact)
+--------------------
+
+Enter values for given assignments into each of the {} in the lines initializing the Categories (13-19)
+
+ex:
+Category Assignments = new Category("Assignments", new double[]{}, 0.1); 
+would become
+Category Assignments = new Category("Assignments", new double[]{95, 87}, 0.1); 
+If you had 2 assignments where you had scored a 95% and an 87%, respectively
+
+--------------------
+
+If you only have 1 grade for a category, simply enter that grade.
+
+ex:
+Category Labs = new Category("Labs", new double[]{83}, 0.1);
+for a scenario where you only have a single lab grade of 83%
+
+--------------------
+
+If you have no grades for a category, leave the {} for that category empty.
+
+ex:
+Category Final = new Category("Final", new double[]{}, 0.2);
+should remain with empty {} because we have not yet taken the final
+
+--------------------
+
+If you want to test what your grade WOULD be if you earn a certain grade on any given assignment, enter that grade into the relevent field
+ex:
+Category Final = new Category("Final", new double[]{}, 0.2);
+becoming
+Category Final = new Category("Final", new double[]{80}, 0.2);
+to test what your grade is if you get an 80% on the final.
+
+--------------------
+
+
+
+
+
+
+Currently the weights are accurate for COSC 214. If you want to modify this for other classes simply modify the weights and add or remove categories accordingly.
+
+ex:
+In another class, if the group project is worth 20%, and quizzes only 10%, you would change:
+Category GroupProject = new Category("Group Project", new double[]{}, 0.1);
+to
+Category GroupProject = new Category("Group Project", new double[]{}, 0.2);
+
+and change
+Category Quizzes = new Category("Quizzes", new double[]{}, 0.2);     //.2 weight = 20%
+to
+Category Quizzes = new Category("Quizzes", new double[]{}, 0.1);     //.1 weight = 10%
+
+
+
+to remove a category, for example midterm:
+
+delete:
+Category Midterm = new Category("Midterm", new double[]{}, 0.2);
+
+as well as
+categories.add(Midterm);
+be sure to check that the weights are accurate.
+
+
+
+to add a category, add those same lines in the relevant places using the new category name. be sure to set the correct weights.
+
+
+
+
