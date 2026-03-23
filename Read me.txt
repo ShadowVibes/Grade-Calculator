@@ -1,13 +1,13 @@
 Hopefully this is sufficient to understand the program. If you still have any questions about this after reading catch me during or after class (or msg me if you have my contact)
 --------------------
 
-Enter values for given assignments into each of the {} in the lines initializing the Categories (13-19)
+Enter values (grades in percent form) for any given assignments you have grades for into each of the {} in the lines initializing the Categories (13-19)
 
 ex:
 Category Assignments = new Category("Assignments", new double[]{}, 0.1); 
 would become
 Category Assignments = new Category("Assignments", new double[]{95, 87}, 0.1); 
-If you had 2 assignments where you had scored a 95% and an 87%, respectively
+If you had 2 assignments in the "Assignments" grade category where you had scored a 95% and an 87%, respectively
 
 --------------------
 
